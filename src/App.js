@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.css";
+import Nasa from './Components/Nasa'
+
 
 function App() {
   return (
     <div className="App">
       <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+        <div>
+          <h1>Elijah</h1>
+          <Nasa/>
+        </div>
       </p>
     </div>
   );
