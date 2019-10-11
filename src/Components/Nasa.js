@@ -1,6 +1,11 @@
 import React,{useState, useEffect} from "react";
-// import Nasacard from './Nasacard';
+import Nasacard from './Nasacard';
 import axios from "axios";
+
+
+
+
+
 
 
 export default function Nasa() {
@@ -19,15 +24,19 @@ export default function Nasa() {
     },[]);
 
     return (
-        
-            
-                 <div>
-                 <h1>{item.title}</h1>
-                 <p> {item.explanation}</p>
-                 <img  src={item.hdurl} alt="Nasa"/> 
-                 <p> {item.date}</p>
-                 </div> 
+        <div className="The-One">
+            <div className="Sun">
+
+            <Nasacard
+            title={item.title}
+            explanation={item.explanation}
+            date={item.date}
+            hdurl={item.hdurl}
+            />
+
+            </div>
+
+        </div>
                  )
-       
-    
+      
 }
